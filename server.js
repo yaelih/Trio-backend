@@ -25,6 +25,7 @@ if (process.env.NODE_ENV === 'production') {
         credentials: true
     }
     app.use(cors(corsOptions))
+    require('dotenv').config()
 }
 
 const authRoutes = require('./api/auth/auth.routes')
